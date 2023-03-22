@@ -37,7 +37,7 @@ namespace sql_project
             if (listBox1.SelectedItem != null)
             {
                 crs_name = listBox1.SelectedItem.ToString();
-                this.Hide();
+                //this.Hide();
                 Exam_student std_exam = new Exam_student();
                 std_exam.ShowDialog();
             }

@@ -389,13 +389,13 @@ namespace sql_project
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SelectStudentAnswer_Result>("SelectStudentAnswer", stidParameter);
         }
     
-        public virtual ObjectResult<string> ShowExam(Nullable<int> course)
+        public virtual ObjectResult<Nullable<int>> ShowExam(Nullable<int> course)
         {
             var courseParameter = course.HasValue ?
                 new ObjectParameter("Course", course) :
                 new ObjectParameter("Course", typeof(int));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("ShowExam", courseParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("ShowExam", courseParameter);
         }
     
         public virtual int sp_alterdiagram(string diagramname, Nullable<int> owner_id, Nullable<int> version, byte[] definition)

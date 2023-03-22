@@ -4,17 +4,17 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="268dae30029c407b94058ae879c9ca29" Name="Diagram1">
+      <Diagram DiagramId="4089e97b9280433aa563e7cb7a8dbf04" Name="Diagram1">
         <EntityTypeShape EntityType="ExamSYSModel.Choice" Width="1.5" PointX="7.5" PointY="4.625" IsExpanded="true" />
         <EntityTypeShape EntityType="ExamSYSModel.Course" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="ExamSYSModel.Department" Width="1.5" PointX="0.5" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExamSYSModel.Department" Width="1.5" PointX="3" PointY="3.375" IsExpanded="true" />
         <EntityTypeShape EntityType="ExamSYSModel.Exam" Width="1.5" PointX="3" PointY="6.625" IsExpanded="true" />
         <EntityTypeShape EntityType="ExamSYSModel.Instructor" Width="1.5" PointX="3" PointY="9.75" IsExpanded="true" />
         <EntityTypeShape EntityType="ExamSYSModel.Question" Width="1.5" PointX="5.25" PointY="6.875" IsExpanded="true" />
         <EntityTypeShape EntityType="ExamSYSModel.Stu_Answer" Width="1.5" PointX="7.5" PointY="7" IsExpanded="true" />
         <EntityTypeShape EntityType="ExamSYSModel.Stud_Course" Width="1.5" PointX="6" PointY="11" IsExpanded="true" />
-        <EntityTypeShape EntityType="ExamSYSModel.Student" Width="1.5" PointX="3" PointY="0.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="ExamSYSModel.sysdiagram" Width="1.5" PointX="5.625" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExamSYSModel.Student" Width="1.5" PointX="5.25" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExamSYSModel.sysdiagram" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="ExamSYSModel.Topic" Width="1.5" PointX="3" PointY="15.625" IsExpanded="true" />
         <AssociationConnector Association="ExamSYSModel.FK_Choices_Question" ManuallyRouted="false" />
         <AssociationConnector Association="ExamSYSModel.FK_Exam_Course" ManuallyRouted="false" />

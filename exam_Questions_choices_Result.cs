@@ -14,14 +14,9 @@ namespace sql_project
     public partial class exam_Questions_choices_Result
     {
         public int Q_Id { get; set; }
-        public string Model_Answer { get; set; }
         public string Q_Title { get; set; }
-        public Nullable<int> grade { get; set; }
+        public string Model_Answer { get; set; }
         public string type { get; set; }
-        public Nullable<int> Crs_Id { get; set; }
-        public int Ex_Id { get; set; }
-        public int Q_Id1 { get; set; }
-        public int Q_Id2 { get; set; }
         public string choice { get; set; }
     }
 }

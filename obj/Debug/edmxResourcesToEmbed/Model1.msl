@@ -148,14 +148,9 @@
       <ResultMapping>
         <ComplexTypeMapping TypeName="ExamSYSModel.exam_Questions_choices_Result">
           <ScalarProperty Name="Q_Id" ColumnName="Q_Id" />
-          <ScalarProperty Name="Model_Answer" ColumnName="Model_Answer" />
           <ScalarProperty Name="Q_Title" ColumnName="Q_Title" />
-          <ScalarProperty Name="grade" ColumnName="grade" />
+          <ScalarProperty Name="Model_Answer" ColumnName="Model_Answer" />
           <ScalarProperty Name="type" ColumnName="type" />
-          <ScalarProperty Name="Crs_Id" ColumnName="Crs_Id" />
-          <ScalarProperty Name="Ex_Id" ColumnName="Ex_Id" />
-          <ScalarProperty Name="Q_Id1" ColumnName="Q_Id1" />
-          <ScalarProperty Name="Q_Id2" ColumnName="Q_Id2" />
           <ScalarProperty Name="choice" ColumnName="choice" />
         </ComplexTypeMapping>
       </ResultMapping>

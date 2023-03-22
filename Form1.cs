@@ -36,7 +36,7 @@ namespace sql_project
                     if (student != null && student.St_Fname.ToLower() == name.ToLower())
                     {
                         MessageBox.Show($"Hi {name}");
-                        this.Hide();
+                        //this.Hide();
                         student_courses std_crs = new student_courses();
                         std_crs.ShowDialog();
 

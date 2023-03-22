@@ -1043,7 +1043,7 @@
           <FunctionImport Name="SelectStudentAnswer" ReturnType="Collection(ExamSYSModel.SelectStudentAnswer_Result)">
             <Parameter Name="Stid" Mode="In" Type="Int32" />
           </FunctionImport>
-          <FunctionImport Name="ShowExam" ReturnType="Collection(String)">
+          <FunctionImport Name="ShowExam" ReturnType="Collection(Int32)">
             <Parameter Name="Course" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_alterdiagram">
@@ -1157,14 +1157,9 @@
         </EntityContainer>
         <ComplexType Name="exam_Questions_choices_Result">
           <Property Type="Int32" Name="Q_Id" Nullable="false" />
-          <Property Type="String" Name="Model_Answer" Nullable="false" MaxLength="200" />
           <Property Type="String" Name="Q_Title" Nullable="true" MaxLength="200" />
-          <Property Type="Int32" Name="grade" Nullable="true" />
+          <Property Type="String" Name="Model_Answer" Nullable="false" MaxLength="200" />
           <Property Type="String" Name="type" Nullable="true" MaxLength="10" />
-          <Property Type="Int32" Name="Crs_Id" Nullable="true" />
-          <Property Type="Int32" Name="Ex_Id" Nullable="false" />
-          <Property Type="Int32" Name="Q_Id1" Nullable="false" />
-          <Property Type="Int32" Name="Q_Id2" Nullable="false" />
           <Property Type="String" Name="choice" Nullable="false" MaxLength="200" />
         </ComplexType>
         <ComplexType Name="NameOfCourseAndNumOfStudByInsId_Result">
@@ -1355,14 +1350,9 @@
             <ResultMapping>
               <ComplexTypeMapping TypeName="ExamSYSModel.exam_Questions_choices_Result">
                 <ScalarProperty Name="Q_Id" ColumnName="Q_Id" />
-                <ScalarProperty Name="Model_Answer" ColumnName="Model_Answer" />
                 <ScalarProperty Name="Q_Title" ColumnName="Q_Title" />
-                <ScalarProperty Name="grade" ColumnName="grade" />
+                <ScalarProperty Name="Model_Answer" ColumnName="Model_Answer" />
                 <ScalarProperty Name="type" ColumnName="type" />
-                <ScalarProperty Name="Crs_Id" ColumnName="Crs_Id" />
-                <ScalarProperty Name="Ex_Id" ColumnName="Ex_Id" />
-                <ScalarProperty Name="Q_Id1" ColumnName="Q_Id1" />
-                <ScalarProperty Name="Q_Id2" ColumnName="Q_Id2" />
                 <ScalarProperty Name="choice" ColumnName="choice" />
               </ComplexTypeMapping>
             </ResultMapping>
